@@ -64,10 +64,6 @@ const suspectsArray = [
   }
 ];
 
-// Suspects Array
-
-const suspectsArray = [];
-
 // Rooms Array
 
 const roomsArray = [
