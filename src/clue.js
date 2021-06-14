@@ -172,7 +172,25 @@ function pickMystery() {
 
 // ITERATION 3
 
-function revealMystery() {}
+function revealMystery(envelope) {
+  return `${envelope.suspect.firstName} ${envelope.suspect.lastName} killed Mr. Boddy using the ${envelope.weapon.name} in the ${envelope.room.name}!`;
+}
+
+// Console.log to check functions are workings
+
+console.log(pickMystery());
+
+let newMystery = pickMystery();
+
+console.log(revealMystery(newMystery));
+
+let testMystery = {
+  suspect: { firstName: 'Victor', lastName: 'Plum' },
+  weapon: { name: 'poison' },
+  room: { name: 'Billiard Room' }
+};
+
+console.log(revealMystery(testMystery));
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
